@@ -21,7 +21,7 @@ jobs:
 
       - run:
           name: Install ICC
-          command: echo $ACTIVATION_SERIAL_NUMBER && isrm pkg install --activate-serial-number icc
+          command: isrm pkg install --activate-serial-number icc
 
       - run:
           name: Build and Test Project
