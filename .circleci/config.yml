@@ -17,11 +17,11 @@ jobs:
 
       - run:
           name: Install ISRM
-          command: pip3 install http://rscohn2.github.io/files/isrm.zip
+          command: pip3 install http://rscohn2.github.io/files/isrm-master.zip
 
       - run:
           name: Install ICC
-          command: isrm pkg install --activate-serial-number icc
+          command: isrm pkg install --activate-serial-number icc ifort
 
       - run:
           name: Build and Test Project
