@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.com/rscohn2/ci-test.svg?branch=master)](https://travis-ci.com/rscohn2/ci-test)
-CircleCI Build Status: https://circleci.com/gh/anoopmad/ci-test/tree/master.svg?style=svg  
+[![CircleCI](https://circleci.com/gh/anoopmad/ci-test/tree/master.svg?style=svg)](https://circleci.com/gh/anoopmad/ci-test/tree/master)
 
 # ci-test
 
