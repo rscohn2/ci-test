@@ -4,12 +4,14 @@ before_script:
     - apt-get update -qq && apt-get install -y -qq cmake cpio python3 python3-pip
     - pip3 install http://rscohn2.github.io/files/isrm-master.zip
     - isrm pkg install --activate-serial-number icc ifort
-#
-#test:
-#  script:
-    - source /opt/intel/bin/iccvars.sh -arch intel64
+
+test:
+  script:
+    # Force 0 exit code with null command. Not sure why script fails
+    - source /opt/intel/bin/iccvars.sh -arch intel64 || true
     - icc -v
     - mkdir build; cd build
     - FC=ifort CC=icc CXX=icpc cmake ../src
     - make
     - make test
+  
